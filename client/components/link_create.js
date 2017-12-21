@@ -4,12 +4,12 @@ import React, {Component} from 'react';
 class LinkCreate extends Component{
     
     onSubmitHandler(event){
-        event.preventDefault();//to prevent webpage from reloading on click of submit button
+        event.preventDefault(); //to prevent webpage from reloading on click of submit button
         Meteor.call('links.insert',this.refs.link.value);
         //console.log(this.refs.link.value);
     }
     render(){
-           console.log("Check");
+          // console.log("Check");
         return(
             <form onSubmit={this.onSubmitHandler.bind(this)}>
                 <div className="form-group">
