@@ -9,7 +9,7 @@ Meteor.methods({
         else
             console.log("Not working");*/
         check(url, Match.Where(url => validUrl.isUri(url)));
-        //console.log('trying to save', url);
+        
     }
 });
 export const Links = new Mongo.Collection('links');
