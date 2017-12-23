@@ -1,7 +1,7 @@
 # URL-Shortener
 A web-app which can generate short link for any link given as Input. Similar to bitly.com
 
-Follow these steps to run and test the app in your PC:
+Follow these steps to test the app in your local machine:
 
 Step 1: Clone the repository using command 'git clone https://github.com/anuragiiits/URL-Shortener' or from the direct download option.
 
