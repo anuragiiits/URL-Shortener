@@ -24,14 +24,24 @@ class LinkCreate extends Component{
     render(){
           // console.log("Check");
         return(
-            <form onSubmit={this.onSubmitHandler.bind(this)}>
-                <div className="form-group">
-                    <label> Label to Shorten</label>
-                    <input ref="link" className="form-control" />
+                <div className="row">
+                    <div className="col-md-4">
+                    </div>
+                    <div className="col-md-4 well">
+                        <form onSubmit={this.onSubmitHandler.bind(this)}>
+                            <div className="form-group">
+                                <label htmlFor="label1"> Link to Shorten</label>
+                                <input ref="link" id="label1" className="form-control" />
+                            </div>
+                            <br/>
+                            <div className="text text-danger">{this.state.error}</div>
+                            <button className="btn btn-outline-blue">Shorten</button>
+                        </form>
+                    </div>
+                    <div className="col-md-4">
+                    </div>
                 </div>
-                <div className="text text-danger">{this.state.error}</div>
-                <button className="btn btn-primary">Shorten!</button>
-            </form>
+        
         );
     };
 

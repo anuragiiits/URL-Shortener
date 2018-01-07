@@ -10,6 +10,7 @@ const App = ()=>{
     <div>
       <Header />
       <LinkCreate />
+      <div className="clearfix" ></div>
       <LinkList />
     </div>
   );
