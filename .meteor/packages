@@ -19,3 +19,11 @@ shell-server@0.3.0            # Server-side component of the `meteor shell` comm
 
 twbs:bootstrap@3.3.6
 react-meteor-data
+iron:router
+dburles:collection-helpers
+aldeed:collection2
+alanning:roles
+fortawesome:fontawesome
+accounts-base
+accounts-password
+yogiben:admin

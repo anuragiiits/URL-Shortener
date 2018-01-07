@@ -6,11 +6,15 @@
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "bcrypt": "^1.0.3",
     "connect-route": "^0.1.5",
     "meteor-node-stubs": "^0.3.2",
     "react": "^16.2.0",
     "react-addons-pure-render-mixin": "^15.6.2",
     "react-dom": "^16.2.0",
     "valid-url": "^1.0.9"
+  },
+  "engines": {
+    "node":"8.9.3"
   }
 }
