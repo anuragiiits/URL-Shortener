@@ -1,21 +1,26 @@
 {
-  "name": "shorten_my_link",
+  "name": "URL_Shortener",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.54",
-    "babel-runtime": "^6.26.0",
-    "bcrypt": "^1.0.3",
+    "@babel/runtime": "^7.0.0-beta.51",
     "connect-route": "^0.1.5",
-    "meteor-node-stubs": "^0.3.2",
-    "react": "^16.2.0",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.4.1",
     "react-addons-pure-render-mixin": "^15.6.2",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.4.1",
     "valid-url": "^1.0.9"
   },
-  "engines": {
-    "node": "8.9.3"
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
   }
 }

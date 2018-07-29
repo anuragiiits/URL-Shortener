@@ -1,17 +1,4 @@
-/* CSS declarations go here */
-
-
-.btn.btn-outline-blue{
-  color: blue;
-  background-color: rgba(58, 163, 212, 0.13);
-  border-color: #3AA3D4;
-}
-.btn.btn-outline-blue:hover{
-  color: #3AA3D4;
-  background-color: rgba(58, 163, 212, 0.43);
-  border-color: #3AA3D4;
-}
-label{
-    font-size: 18px;
-    color: #4e4e50;
+body {
+  padding: 10px;
+  font-family: sans-serif;
 }

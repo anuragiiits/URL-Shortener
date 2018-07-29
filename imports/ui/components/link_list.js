@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import { withTracker } from 'meteor/react-meteor-data';
-import { Links } from '../../imports/collections/links';
+import { Links } from '../../api/links';
+import { Meteor } from 'meteor/meteor';
 
 class LinkList extends Component{
-
-    renderRows(){
+	renderRows(){
         return this.props.links.map(link =>{
             const {url, clicks, token} = link;
             const shortLink = `http://localhost:3000/${token}`;
-            // const shortLink = `https://shorten-any-link.herokuapp.com/${token}`;
+
             return(
                 <tr key={token}>
                     <td>{url}</td>
@@ -21,9 +21,9 @@ class LinkList extends Component{
         })
     }
 
-    render(){
-        return(
-            <table className="table">
+	render(){
+		return(
+			<table className="table">
                 <thead>
                     <tr>
                         <th>URL</th>
@@ -35,9 +35,10 @@ class LinkList extends Component{
                     {this.renderRows()}
                 </tbody>
             </table>
-        );
-    };
-};
+		);
+	}
+
+}
 
 export default withTracker(()=>{
     Meteor.subscribe('links');
