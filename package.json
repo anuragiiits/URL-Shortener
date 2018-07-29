@@ -5,6 +5,7 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.54",
     "babel-runtime": "^6.26.0",
     "bcrypt": "^1.0.3",
     "connect-route": "^0.1.5",
@@ -15,6 +16,6 @@
     "valid-url": "^1.0.9"
   },
   "engines": {
-    "node":"8.9.3"
+    "node": "8.9.3"
   }
 }

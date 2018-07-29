@@ -8,7 +8,7 @@ Meteor.methods({
             console.log("Its working",url);
         else
             console.log("Not working");*/
-        check(url, Match.Where(url => validUrl.isUri(url)));    //throws an error if its false and further lines won't execute
+        check(url, Match.Where(url => validUrl.isUri(url)));    //throws an error if Match.Where is false and further lines willn't execute
         
         const token = Math.random().toString(36).slice(-5);
         Links.insert({url, token, clicks:0}); //equivalent to url:url, token:token, clicks:0
